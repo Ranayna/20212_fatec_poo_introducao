@@ -1,10 +1,18 @@
 public class Empregado {
     private String nome; //encapsulado
     private int idade;  // encapsulado
-    private int tipo; 
+    private int tipo; //encapsulado 
     private double salario;
     private double comissao;
     private double bonus;
+
+    public void setTipo (int tipo){
+        this.tipo = tipo; 
+    }
+
+    public int getTipo (){
+        return this.tipo; 
+    }
 
     public double calculaSalario(){ //metodo
         if (tipo == 1) {
